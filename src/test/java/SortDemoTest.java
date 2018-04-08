@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Item;
 import main.java.SortAlgos;
 import main.java.SortDemoData;
 
@@ -78,16 +77,16 @@ class SortDemoTest {
     /**
      * SameNumber checks that duplicate numbers are removed
      */
-    // @Test
-    // public void SameNumber() {
-    //     data.initializeArray("5 5 64 4 4");  
+     @Test
+     public void SameNumber() {
+         data.initializeArray("5 5 64 4 4");  
         
-    //     SortDemoData data2 = new SortDemoData();
-    //     data2.initializeArray("5 64 4");
-    //     assertTrue(data.myArray.length == 3);
-    //     assertTrue(data.myArray[0].key == data2.myArray[0].key );
-    //     assertTrue(data.myArray[1].key == data2.myArray[1].key );
-    //     assertTrue(data.myArray[2].key == data2.myArray[2].key );
-    // }
+         SortDemoData data2 = new SortDemoData();
+         data2.initializeArray("5 64 4");
+         assertTrue(data.myArray.length == 3);
+         assertTrue(data.myArray[0] == data2.myArray[0]);
+         assertTrue(data.myArray[1] == data2.myArray[1]);
+         assertTrue(data.myArray[2] == data2.myArray[2]);
+     }
     
 }
